@@ -27,8 +27,32 @@
 			"enablePullDownRefresh": false
 		}
 	}],
+	"subPackages":[
+		{
+			"root":"subpkg",
+			"pages":[{
+                    "path" : "goods-detail/goods-detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "详情页面",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods-list/goods-list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "玩家联盟",
 		"navigationBarBackgroundColor": "#000000",
 		"backgroundColor": "#000000",

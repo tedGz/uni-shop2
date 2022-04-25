@@ -5,9 +5,17 @@
     "pages/cart/cart",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "goods-detail/goods-detail",
+        "goods-list/goods-list"
+      ]
+    }
+  ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "玩家联盟",
     "navigationBarBackgroundColor": "#000000",
     "backgroundColor": "#000000"

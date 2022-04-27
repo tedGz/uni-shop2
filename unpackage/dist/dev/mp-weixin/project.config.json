@@ -33,19 +33,13 @@
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
     "ignoreUploadUnusedFiles": true,
-<<<<<<< HEAD
-    "minifyWXML": true,
-=======
->>>>>>> cate
-    "useStaticServer": true
+    "useStaticServer": true,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.24.0",
   "appid": "wx6961d98116020954",
   "projectname": "uni-shop-2",
-<<<<<<< HEAD
-  "condition": {},
-=======
   "condition": {
     "search": {
       "current": -1,
@@ -64,7 +58,6 @@
       "list": []
     }
   },
->>>>>>> cate
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

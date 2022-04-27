@@ -61,7 +61,7 @@ component.options.__file = "pages/cate/cate.vue"
 /*!***********************************************************************************************!*\
   !*** D:/新建文件夹/HbuilderXProject/uni-shop-2/pages/cate/cate.vue?vue&type=template&id=56dc8334& ***!
   \***********************************************************************************************/
-/*! no static exports found */
+/*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93,6 +93,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    mySearch: function() {
+      return __webpack_require__.e(/*! import() | components/my-search/my-search */ "components/my-search/my-search").then(__webpack_require__.bind(null, /*! @/components/my-search/my-search.vue */ 56))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -164,6 +187,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -179,7 +204,7 @@ var _default =
 
     // 获取设备高度
     var sysInfo = uni.getSystemInfoSync();
-    this.wh = sysInfo.windowHeight;
+    this.wh = sysInfo.windowHeight - 50;
 
     // 请求 CateList 数据
     this.getCateList();
@@ -210,6 +235,12 @@ var _default =
     gotoGoodsList: function gotoGoodsList(item) {
       uni.navigateTo({
         url: '/subpkg/goods-list/goods-list?cid=' + item.cat_id });
+
+    },
+    // 跳转到搜索列表
+    gotoSearch: function gotoSearch() {
+      uni.navigateTo({
+        url: '../../subpkg/search/search' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

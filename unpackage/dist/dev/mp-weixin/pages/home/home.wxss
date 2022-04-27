@@ -34,4 +34,10 @@ swiper image {
   padding-left: 15rpx;
   justify-content: space-around;
 }
+.search-box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
 

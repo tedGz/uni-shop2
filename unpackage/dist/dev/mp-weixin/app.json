@@ -10,7 +10,8 @@
       "root": "subpkg",
       "pages": [
         "goods-detail/goods-detail",
-        "goods-list/goods-list"
+        "goods-list/goods-list",
+        "search/search"
       ]
     }
   ],

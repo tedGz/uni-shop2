@@ -6,33 +6,26 @@
   },
   "setting": {
     "urlCheck": false,
+    "checkSiteMap": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
-    "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "useIsolateContext": false,
-    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
@@ -40,14 +33,38 @@
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
     "ignoreUploadUnusedFiles": true,
+<<<<<<< HEAD
     "minifyWXML": true,
+=======
+>>>>>>> cate
     "useStaticServer": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.24.0",
   "appid": "wx6961d98116020954",
   "projectname": "uni-shop-2",
+<<<<<<< HEAD
   "condition": {},
+=======
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": []
+    }
+  },
+>>>>>>> cate
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

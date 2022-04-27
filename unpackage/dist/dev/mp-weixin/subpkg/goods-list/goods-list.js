@@ -21,11 +21,6 @@ createPage(_goodsList.default);
   !*** D:/新建文件夹/HbuilderXProject/uni-shop-2/subpkg/goods-list/goods-list.vue ***!
   \*****************************************************************************/
 /*! no static exports found */
-<<<<<<< HEAD
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js):\nError: ENOENT: no such file or directory, open 'D:\\新建文件夹\\HbuilderXProject\\uni-shop-2\\subpkg\\goods-list\\goods-list.vue'");
-=======
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -146,7 +141,6 @@ var _default =
 
 
   } };exports.default = _default;
->>>>>>> home
 
 /***/ })
 

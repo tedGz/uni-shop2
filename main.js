@@ -22,7 +22,7 @@ $http.afterRequest = function(options) {
 }
 
 // 设置基础url
-$http.baseUrl = 'http://uinav.com'
+$http.baseUrl = 'http://api-hmugo-web.itheima.net'
 
 // 封装弹框的方法
 uni.$showMsg = function(title = '数据请求失败', duration = 1500) {

@@ -31,7 +31,7 @@ _requestMiniprogram.$http.afterRequest = function (options) {
 };
 
 // 设置基础url
-_requestMiniprogram.$http.baseUrl = 'http://uinav.com';
+_requestMiniprogram.$http.baseUrl = 'http://api-hmugo-web.itheima.net';
 
 // 封装弹框的方法
 uni.$showMsg = function () {var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '数据请求失败';var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1500;

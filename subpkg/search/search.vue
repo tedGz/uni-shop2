@@ -20,11 +20,11 @@
 			<!-- 区域标题 -->
 			<view class="history-title">
 				<text>搜索历史</text>
-			  <uni-icons type="trash" size="17"></uni-icons>
+			  <uni-icons @click="clean" type="trash" size="17"></uni-icons>
 			</view>
 			<!-- 列表区域 -->
 			<view class="history-list">
-				<uni-tag :circle="true" class="history-list-item" :text="item" v-for="(item,index) in histories" :key='index'
+				<uni-tag @click="gotoGoodsList(item)" :circle="true" class="history-list-item" :text="item" v-for="(item,index) in histories" :key='index'
 				custom-style="background-color: #ebebeb; border:none; font-size: 14px; color: #000000;"
 				></uni-tag>
 			</view>
@@ -79,9 +79,19 @@
 				
 				// 对搜索历史数据进行本地化存储
 				uni.setStorageSync('kw', JSON.stringify(this.historyList))
-				
+			},
+			// 清理历史记录
+			clean() {
+				this.historyList = []
+				uni.setStorageSync('kw', '[]')
+			},
+			// 点击标签跳转到商品详情
+			gotoGoodsList(kw) {
+				uni.navigateTo({
+					url:'/subpkg/goods-list/goods-list?query=' + kw
+				})
 			}
-		},
+ 		},
 		computed:{
 			histories() {
 				// 搜索历史最新数据提前方法

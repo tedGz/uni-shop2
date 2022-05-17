@@ -12,9 +12,16 @@ uni.$http = $http
 
 // 请求拦截器
 $http.beforeRequest = function(options) {
+	console.log(store);
 	uni.showLoading({
 		title: "正在加载...."
 	})
+	
+	if(options.url.indexOf('/my/') !== -1) {
+		options.header = {
+			Authorization: store.state.m_user.token
+		}
+	}
 }
 
 // 响应拦截器
